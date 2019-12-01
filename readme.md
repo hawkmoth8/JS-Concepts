@@ -25,7 +25,7 @@ Essentially, it creates a new, empty object that has parent in its prototype cha
 
 if we `console.log(child)`, we will see
 
-![](./prototypal-inheritance.jpg)
+![](https://raw.githubusercontent.com/hawkmoth8/JS-Key-Concepts/master/prototypal-inheritance.JPG)
 
 # Prototypal Inheritance VS Classical Inheritance
 
@@ -52,7 +52,7 @@ console.log(bar.__proto__.__proto__ === Foo.prototype); //true
 console.log(bar);
 ```
 
-![](./pi-vs-ci-1.jpg)
+![](https://raw.githubusercontent.com/hawkmoth8/JS-Key-Concepts/master/pi-vs-ci-1.JPG)
 
 ```javascript
 function Foo() {
@@ -73,4 +73,4 @@ console.log(bar.__proto__ === Bar.prototype); //true
 console.log(bar.__proto__.__proto__ === Foo.prototype); //true
 ```
 
-![](./pi-vs-ci-2.jpg)
+![](https://raw.githubusercontent.com/hawkmoth8/JS-Key-Concepts/master/pi-vs-ci-2.JPG)
