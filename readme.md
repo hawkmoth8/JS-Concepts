@@ -74,3 +74,28 @@ console.log(bar.__proto__.__proto__ === Foo.prototype); //true
 ```
 
 ![](https://raw.githubusercontent.com/hawkmoth8/JS-Key-Concepts/master/pi-vs-ci-2.JPG)
+
+# Arrow Function and Inheritance
+
+```javascript
+class A {
+  handleClick = () => {
+    console.log("A.handleClick");
+  };
+
+  handleLongClick() {
+    console.log("A.handleLongClick");
+  }
+}
+
+console.log(A.prototype);
+// {constructor: ƒ, handleLongClick: ƒ}
+
+new A().handleClick();
+// A.handleClick
+
+new A().handleLongClick();
+// A.handleLongClick
+```
+
+If class B inherit from class A ,handleClick won’t be in the prototype and we can’t call super.handleClick from our arrow function handleClick .
